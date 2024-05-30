@@ -1,0 +1,6 @@
+name: TM_wengLab
+dependencies:
+  - numpy
+  - pandas
+  - hdf5
+  - h5py
