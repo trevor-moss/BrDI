@@ -4,3 +4,4 @@ dependencies:
   - pandas
   - hdf5
   - h5py
+  - pytables
