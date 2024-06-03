@@ -1,12 +1,16 @@
+# Trevor Moss
+# Last updated: June 3rd, 2024
+# Imports csv files from an inbox folder, processes the first column datetime string into UNIX, adds the database to an HDF5 file, moves CSVs to a processed folder
+
 import os
-import numpy as np
 import h5py
 import pandas as pd
+import numpy as np
 
-# Define directories
+# Define directories, place CSVs in the csvInbox folder
 source_dir = 'csvInbox'
 processed_dir = 'csvProcessed'
-hdf5_filename = 'output_data.h5'
+hdf5_filename = 'bioreactorData.h5'
 
 # Create processed directory if it doesn't exist
 if not os.path.exists(processed_dir):
