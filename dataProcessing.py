@@ -1,5 +1,4 @@
-# Trevor Moss
-# Last updated: June 3rd, 2024
+# Last updated: Trevor Moss, June 3rd, 2024
 # Imports csv files from an inbox folder, processes the first column datetime string into UNIX, adds the database to an HDF5 file, moves CSVs to a processed folder
 
 import os

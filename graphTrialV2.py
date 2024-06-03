@@ -1,5 +1,4 @@
-# Trevor Moss
-# Last updated: June 3rd, 2024
+# Last updated: Trevor Moss, June 3rd, 2024
 # Selects databases from an HDF5 file along with the desired columns to be plotted, plots on matplotlib
 
 import h5py
