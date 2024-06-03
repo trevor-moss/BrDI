@@ -5,3 +5,4 @@ dependencies:
   - hdf5
   - h5py
   - pytables
+  - matplotlib
