@@ -1,8 +1,12 @@
+# Trevor Moss
+# Last updated: June 3rd, 2024
+# Selects databases from an HDF5 file along with the desired columns to be plotted, plots on matplotlib
+
 import h5py
 import matplotlib.pyplot as plt
 
 # Path to the HDF5 file
-hdf5_filename = 'output_data.h5'
+hdf5_filename = 'bioreactorData.h5'
 
 # Open the HDF5 file
 with h5py.File(hdf5_filename, 'r') as hdf5_file:
