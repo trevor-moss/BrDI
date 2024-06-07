@@ -19,7 +19,7 @@ Plots with matplotlib
   * Ex: Oxygen uptake, ____
 
 **June 7th, 2024**
-* Added a searchbar to the GUI when selecting dataset
+* Added a searchbar to the GUI when selecting dataset(s)
 
 **June 5th, 2024**
 * Adds a basic GUI to the graphing script
