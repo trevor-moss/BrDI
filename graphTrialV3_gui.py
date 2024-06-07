@@ -1,7 +1,7 @@
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt
-from tkinter import Tk, Label, Listbox, MULTIPLE, Button, END, Scrollbar
+from tkinter import Tk, Label, Listbox, MULTIPLE, Button, END, Scrollbar, Entry
 
 # Function to plot selected datasets and columns
 def plot_data():
@@ -31,6 +31,27 @@ def plot_data():
         plt.grid(True)
         plt.show()
 
+# Function to update the dataset listbox based on the search query
+def update_listbox(*args):
+    search_query = search_var.get().lower()
+    current_selection = [dataset_listbox.get(i) for i in dataset_listbox.curselection()]
+    dataset_listbox.delete(0, END)
+    
+    # Always include selected datasets
+    selected_filtered_datasets = sorted(current_selection)
+    
+    # Include only non-selected datasets that match the search query
+    non_selected_filtered_datasets = sorted([dataset for dataset in datasets if search_query in dataset.lower() and dataset not in current_selection])
+    
+    # Add selected datasets to the top
+    for dataset in selected_filtered_datasets:
+        dataset_listbox.insert(END, dataset)
+        dataset_listbox.selection_set(END)
+    
+    # Add non-selected datasets
+    for dataset in non_selected_filtered_datasets:
+        dataset_listbox.insert(END, dataset)
+
 # Path to the HDF5 file
 hdf5_filename = 'bioreactorData.h5'
 
@@ -41,6 +62,14 @@ with h5py.File(hdf5_filename, 'r') as hdf5_file:
 # Create the main window
 root = Tk()
 root.title("HDF5 Data Plotter")
+
+# Database search label
+Label(root, text="Dataset Search").pack()
+
+# Search bar
+search_var = Entry(root)
+search_var.pack()
+search_var.bind('<KeyRelease>', update_listbox)
 
 # Dataset listbox
 Label(root, text="Select Datasets:").pack()
