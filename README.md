@@ -16,6 +16,7 @@ Plots with matplotlib
   * Ex: Overall yield
 * Additional column calculations
   * Ex: Oxygen uptake, ____
+ * Adding databases to folders within the HDF5 file
 
 ## Changelog
 **June 7th, 2024**
