@@ -10,6 +10,8 @@ Opens "bioreactorData.h5" and asks the user to select a single database or multi
 Asks the user which column to plot against which column (multiple columns from a single database soon)
 Plots with matplotlib
 
+
+## Changelog
 **June 7th, 2024**
 * Added a searchbar to the GUI when selecting dataset
 
