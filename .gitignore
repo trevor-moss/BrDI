@@ -154,3 +154,8 @@ cython_debug/
 #.idea/
 
 .DS_store
+.gitattributes
+testing.py
+bioreactorData.h5
+csvInbox/
+csvProcessed/
