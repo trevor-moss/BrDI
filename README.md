@@ -1,4 +1,4 @@
-# BioreactorDataStorage
+# BRDI (BioReactor Data Insights)
  
 **dataProcessing.py:** \
 Imports CSVs from an inbox repository "csvInbox"
