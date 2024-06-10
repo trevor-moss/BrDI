@@ -5,9 +5,9 @@ Imports CSVs from an inbox repository "csvInbox"
 Converts the first column from a datetime string to UNIX time
 Adds the data as a database in the hdf5 file "bioreactorData.h5"
 
-**graphTrialV3_gui.py:** \
+**graphingV4.py:** \
 Opens "bioreactorData.h5" and asks the user to select a single database or multiple databases
-Asks the user which column to plot against which column (multiple columns from a single database soon)
+Asks the user which column(s) to plot
 Plots with matplotlib
 
 ### Future Functionality:
@@ -17,8 +17,17 @@ Plots with matplotlib
 * Additional column calculations
   * Ex: Oxygen uptake, ____
  * Adding databases to folders within the HDF5 file
+ * Ability to specify regions along the x-axis to highlight
 
 ## Changelog
+**June 10th, 2024**
+* Added graphingV4.py
+  * Option to plot columns independent of each other as vertically-stacked subplots
+    * Option to show a vertical line that follows the cursor across subplots
+  * Error messages
+  * Reworked some sections to make code faster, can still be improved
+
+
 **June 7th, 2024**
 * Added a searchbar to the GUI when selecting dataset(s)
 
