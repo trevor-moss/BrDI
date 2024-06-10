@@ -13,7 +13,7 @@ Plots with matplotlib
 ### Future Functionality:
 * Ability to add external time series data to the CSV during the data import process
 * Ability to add metadata to the HDF5 bioreactor dataset
-  * Ex: Overall yield
+  * Ex: Overall yield, specific productivity, volumetric productivity
 * Additional column calculations
   * Ex: Oxygen uptake, ____
  * Adding databases to folders within the HDF5 file
